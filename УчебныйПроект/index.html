@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наш Час-Муж</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="icon">
+        <img src="gallery/icon.png" id="iconimg" alt="Icon">
+    </div>
+
+    <div id="mainpart">
+        <img src="gallery/mainphoto.png" id="mainbg" alt="Main Background">
+        <div class="bgmilkcolor"></div>
+
+        <div id="header">
+            <a href="#secpart">О Нас</a>
+            <a href="#fourpart">Наши Услуги</a>
+            <a href="#orderform">Заказ</a>
+            <a href="#fivepart">Контакты</a>
+        </div>
+
+        <div class="maintext">
+            <p>Ваш список "мужской работы"</p>
+            <p>ВЫПОЛНЕН!</p>
+            <p>В срок,<br>в рамках бюджета,<br>без обязательств.</p>
+        </div>
+    </div>
+
+    <section class="notmainpart" id="secpart">
+        <div class="bgmilk"></div>
+        <div class="notmaintext">
+            <h2>О Нас | Почему стоит выбрать Нашего Часа-Мужа?</h2> <br>
+            <p>Устали от бесконечного списка дел по дому и хлопот с поиском надежных помощников? Мы тоже.<br>Поэтому мы создали «Наш Час-Муж» — сервис, который похож на наличие надежного друга, который хорошо разбирается в инструментах.<br><br>Мы не просто очередное приложение для задач или безликий подрядчик. Мы — команда профессиональных, дружелюбных и тщательно проверенных помощников, стремящихся вернуть вам ваш самый ценный актив: ваше время.<br>Мы появляемся вовремя, с улыбкой и правильными инструментами, чтобы взяться за задачи, которые загромождают ваше ментальное пространство.<br><br>Наша миссия проста: предоставлять качественную помощь без лишних drama, которая позволит вам наконец-то наслаждаться выходными и гордиться своим домом.</p>
+        </div>
+    </section>
+
+    <section class="notmainpart" id="thrdpart">
+        <div class="bgblue"></div>
+        <div class="notmaintext">
+            <div class="milktxt">
+                <h2>Почему Мы Другие?</h2> <br>
+                <p>Обещание Часа-Мужа:</p>
+                <ul>
+                    <li>🤝 Гарантия "Без Вздохов"<br>Мы искренне любим то, что делаем. Вы получите энтузиазм и настроение "сможем сделать", а не отговорки или drama.</li>
+                    <li>🛠️ Навыки и Надежность<br>Каждый член команды проверен на благонадежность, застрахован и профессионально обучен. Ваш дом и ваше доверие в безопасности с нами.</li>
+                    <li>💬 Четкая Коммуникация<br>От бронирования до завершения работы, мы держим вас в курсе. Никакого исчезновения, никаких сюрпризов — только честные обновления.</li>
+                    <li>❤️ Построено на Доверии<br>Мы создаем не просто бизнес; мы строим отношения с нашими клиентами и сообществами.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="notmainpart" id="fourpart">
+        <div class="bgmilk"></div>
+        <div class="notmaintext">
+            <h2>Наши Услуги | Что Мы Можем Сделать Для Вас</h2>
+            <p>От быстрых исправлений до более крупных проектов — мы берем на себя задачи, которые загромождают ваш дом и ваш разум.</p>
+
+            <div class="services-carousel">
+                <div class="carousel-arrow left">&#10094;</div>
+                <div class="carousel-window">
+                    <div class="carousel-track">
+                        <div class="carousel-item">
+                            <img src="gallery/photo1.png" alt="">
+                            <p>Собрать мебель</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="gallery/photo2.png" alt="">
+                            <p>Починить сантехнику</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="gallery/photo3.png" alt="">
+                            <p>Прикрутить полку</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-arrow right">&#10095;</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="notmainpart" id="orderform">
+        <div class="bgblue"></div>
+        <div class="notmaintext">
+            <div class="milktxt">
+                <h2>Оформить заказ</h2>
+                <p>Выберите услуги и оставьте свои данные — мы свяжемся с вами!</p>
+
+                <div class="order-container">
+                    <div class="order-left">
+                        <label>Ваше имя *</label>
+                        <input id="order-client-name" class="input-text" type="text" placeholder="Введите ваше имя:" required>
+                        <label style="margin-top:12px; display:block;">Ваш номер телефона *</label>
+                        <input id="order-client-phone" class="input-text" type="tel" placeholder="Введите номер телефона" required pattern="\d{11}" title="Введите только цифры, 11 символов начиная с 8">
+                        <label style="margin-top:12px; display:block;">Дата и время *</label>
+                        <input id="order-date" class="input-text" type="datetime-local" required>
+                        <label>Выберите услугу *</label>
+                        <select id="order-service-select" class="input-text"></select>
+		    </div>
+
+                    <div class="order-right">
+                        <h3>Выбранные услуги:</h3>
+                        <div id="order-selected-services"></div>
+                        <div id="order-total-price"></div>
+                        <button id="order-submit" class="order-btn">Заказать</button>
+                        <p class="smalltxt">Цена может отличаться от представленной на сайте. Точную цену узнавайте у оператора.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="order-overlay">
+        <div class="msg">Ваш заказ оформлен!</div>
+    </div>
+
+    <div id="alert-overlay">
+        <div class="msg">Проверьте корректность введенных данных</div>
+    </div>
+
+    <section class="notmainpart" id="fivepart">
+        <div class="bgmilk">
+            <div class="notmaintext">
+                <div class="bluetxt">
+                    <h2>Контакты | Свяжитесь с Нами</h2>
+                    <p>Мы здесь, чтобы помочь! Получите бесплатную оценку, закажите услугу или просто задайте вопрос. Мы обещаем быстрый и дружелюбный ответ.</p>
+                    <div class="contacts-row">
+                        <div class="contacts-part">
+                            <p>Вы можете:</p>
+                            <ul>
+                                <li>Позвонить нам! (Пн-Сб: 7:00 - 20:00)<br>(555) 123-HOUR</li>
+                                <li>Отправить email!<br>contact@ourhourhusband.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p id="copyright">Тут должны были быть авторские права</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
